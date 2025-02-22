@@ -15,10 +15,13 @@ export default {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1244px",
       },
     },
     extend: {
+      spacing: {
+        "half": "50%",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -26,7 +29,8 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#0EA5E9",
+          DEFAULT: "#158BE3",
+          light: "#23BDFF",
           foreground: "#FFFFFF",
         },
         secondary: {
@@ -41,6 +45,13 @@ export default {
           DEFAULT: "#F9FAFB",
           foreground: "#111827",
         },
+        text: {
+          DEFAULT: "#26262E",
+          foreground: "#FFFFFF",
+        },
+        golden: {
+          DEFAULT: "#FAB03A",
+        }
       },
       keyframes: {
         "accordion-down": {
