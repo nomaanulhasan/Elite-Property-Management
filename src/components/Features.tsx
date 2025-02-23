@@ -4,15 +4,15 @@ import { Warehouse, Files, Speech } from "lucide-react";
 const features = [
   {
     title: "Reliable property management",
-    icon: <Warehouse size={16} />
+    icon: <img src="/house_icon.svg" width={32} height={32} alt="" />
   },
   {
     title: "Transparent reporting",
-    icon: <Files size={16} />
+    icon: <img src="/doc_icon.svg" width={32} height={32} alt="" />
   },
   {
     title: "Consistent communication",
-    icon: <Speech size={16} />
+    icon: <img src="/speaker_icon.svg" width={32} height={32} alt="" />
   },
 ];
 

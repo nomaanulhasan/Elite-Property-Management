@@ -29,7 +29,7 @@ const Navigation = () => {
     >
       <div className="bg-white">
         <div className="container text-primary text-sm gap-2 h-8 mx-auto flex items-center justify-end">
-          <Phone size={16} /> Resident services: 561-302-9383
+          <img src="/call_icon.svg" width={16} height={16} alt="" /> Resident services: 561-302-9383
         </div>
       </div>
       <div className="container mx-auto px-8 py-4 flex justify-between items-center">
