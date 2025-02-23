@@ -1,5 +1,3 @@
-import { ChevronRight } from "lucide-react";
-
 const ImageActionCard = ({ src, alt }) => {
   return (
     <div className="relative overflow-hidden">

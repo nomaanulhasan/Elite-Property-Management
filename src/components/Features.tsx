@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Warehouse, Files, Speech } from "lucide-react";
 
 const features = [
   {
