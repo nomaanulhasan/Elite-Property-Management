@@ -17,7 +17,7 @@ const Navigation = () => {
 
   return (
     <motion.nav
-      className="fixed w-full bg-transparent z-50 top-0"
+      className={cn("fixed w-full bg-transparent z-50 top-0", isScrolled && "drop-shadow-xl")}
       animate={{
         backgroundColor: isScrolled ? "#ffffff" : "rgba(255,255,255,0)",
       }}
