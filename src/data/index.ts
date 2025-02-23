@@ -10,8 +10,19 @@ export const navList = [
 
 export const slides = [
   {
+    id: 1,
     image: "/hero-1.jfif",
-    title: "The Management team you can depend on",
+    title: "The Management team you can depend on 1",
+    subtitle: "For all south florida rental property management, hoa and condo association needs",
+  }, {
+    id: 2,
+    image: "/hero-2.jfif",
+    title: "The Management team you can depend on 2",
+    subtitle: "For all south florida rental property management, hoa and condo association needs",
+  }, {
+    id: 3,
+    image: "/hero-3.jfif",
+    title: "The Management team you can depend on 3",
     subtitle: "For all south florida rental property management, hoa and condo association needs",
   },
 ];
