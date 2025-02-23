@@ -44,7 +44,7 @@ const Navigation = () => {
             />
           </svg>
         </Button>
-        <div className="hidden lg:flex space-x-8">
+        <div className="hidden lg:flex space-x-6 xl:space-x-8">
           <NavLink href="#home" className="text-primary-light">HOME</NavLink>
           <NavLink href="#find" className={cn(isScrolled ? "text-text" : "text-white")}>FIND MY COMMUNITY</NavLink>
           <NavLink href="#rental" className={cn(isScrolled ? "text-text" : "text-white")}>RENTAL PROPERTY SERVICES</NavLink>
