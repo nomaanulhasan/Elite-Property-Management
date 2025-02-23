@@ -1,4 +1,12 @@
-import { Warehouse, Files, Speech } from "lucide-react";
+export const navList = [
+  { label: "Home", url: "home" },
+  { label: "Find My Community", url: "find" },
+  { label: "Rental Property Services", url: "rental" },
+  { label: "HOA & Condo Assiciation Services", url: "hoa" },
+  { label: "FAQ", url: "faq" },
+  { label: "About", url: "about" },
+  { label: "Contact", url: "contact" },
+];
 
 export const slides = [
   {
@@ -7,7 +15,6 @@ export const slides = [
     subtitle: "For all south florida rental property management, hoa and condo association needs",
   },
 ];
-
 
 export const services = [
   {
