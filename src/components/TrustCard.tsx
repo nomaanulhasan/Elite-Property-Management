@@ -14,7 +14,7 @@ const TrustCard = () => {
         >
           <div className="flex flex-col md:flex-row items-center gap-12">
             <img
-              src="/logo_color_big.png"
+              src="/logo_color_big.webp"
               alt="ELITE Property Management"
               className="w-72"
             />

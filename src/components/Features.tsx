@@ -55,7 +55,7 @@ const Features = () => {
             className="flex items-center flex-col justify-between"
           >
             <img
-              src="/logo_white_bg.png"
+              src="/logo_white_bg.webp"
               alt="ELITE Property Management"
               className="w-full max-h-80"
             />

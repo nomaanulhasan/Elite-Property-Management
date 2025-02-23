@@ -39,7 +39,7 @@ const Navigation = () => {
       </div>
       <div className="container mx-auto px-8 py-4 flex justify-between items-center">
         <div>
-          <img src={isScrolled ? "/logo_color.png" : "/logo_white.png"} alt="ELITE" className="h-12" />
+          <img src={isScrolled ? "/logo_color.webp" : "/logo_white.webp"} alt="ELITE" className="h-12" />
         </div>
 
         {/* Mobile Menu */}
