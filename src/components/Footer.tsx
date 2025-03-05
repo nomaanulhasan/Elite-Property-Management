@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto pr-8">
         <div className="flex gap-4 flex-col-reverse md:flex-row">
           <div className="container py-12 bg-[#FEFEFE] flex flex-1 flex-col">
-            <div className="container pl-8 grid md:grid-cols-4 gap-8">
+            <div className="container pl-8 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -44,7 +44,7 @@ const Footer = () => {
               className="container mt-12"
             >
               <span className="block pt-8 border-t text-gray-600" />
-              <div className="flex flex-col-reverse md:flex-row gap-8 md:gap-0 items-center justify-around text-sm text-gray-500">
+              <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center justify-around text-sm text-gray-500">
                 <div className="text-xs md:text-sm">&copy; {new Date().getFullYear()} Elite All rights reserved.</div>
                 <div className="flex items-center gap-2">
                   <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
