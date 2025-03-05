@@ -59,7 +59,7 @@ const Navigation = () => {
               duration: 0.1,
               ease: "easeInOut"
             }}
-            className={cn("absolute w-[calc(100dvw-1rem)] transition-all md:w-72 p-6 flex flex-col gap-4 top-14 -right-8 md:right-0 bg-white drop-shadow-xl overflow-hidden", isNavVisible ? "pointer-events-auto": "pointer-events-none")}
+            className={cn("absolute w-[calc(100dvw-2.875rem)] transition-all md:w-72 p-6 flex flex-col gap-4 top-14 right-0 bg-white drop-shadow-xl overflow-hidden", isNavVisible ? "pointer-events-auto": "pointer-events-none")}
           >
             <NavRenderer isScrolled={true} />
           </motion.div>
