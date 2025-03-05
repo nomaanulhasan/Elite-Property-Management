@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion } from "framer-motion";
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
@@ -7,6 +7,20 @@ import NavRenderer from './NavRenderer';
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsNavVisible(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const toggleNavVisibility = () => {
     setIsNavVisible(isVisible => !isVisible)
@@ -43,7 +57,7 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className='flex lg:hidden relative'>
+        <div className='flex lg:hidden relative' ref={menuRef}>
           <Button variant='ghost' size='icon' className='hover:bg-transparent' onClick={toggleNavVisibility}>
             <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
