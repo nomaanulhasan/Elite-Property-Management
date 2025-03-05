@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
@@ -8,6 +9,7 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -22,10 +24,6 @@ const Navigation = () => {
     };
   }, []);
 
-  const toggleNavVisibility = () => {
-    setIsNavVisible(isVisible => !isVisible)
-  }
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -34,6 +32,14 @@ const Navigation = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const toggleNavVisibility = () => {
+    setIsNavVisible(isVisible => !isVisible)
+  }
+  const handleHomeClick = () => {
+    navigate("/");
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  };
 
   return (
     <motion.nav
@@ -52,9 +58,9 @@ const Navigation = () => {
         </div>
       </div>
       <div className="container mx-auto px-8 py-4 flex justify-between items-center">
-        <div>
+        <Button variant='ghost' className='hover:bg-transparent' onClick={handleHomeClick}>
           <img src={isScrolled ? "/logo_color.webp" : "/logo_white.webp"} alt="ELITE" className="h-12" />
-        </div>
+        </Button>
 
         {/* Mobile Menu */}
         <div className='flex lg:hidden relative' ref={menuRef}>
