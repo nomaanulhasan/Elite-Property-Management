@@ -16,7 +16,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="relative max-h-dvh">
+    <section className="relative h-[100dvh]">
       <div className="absolute top-0 inset-0 overflow-hidden">
         <AnimatePresence>
           <motion.img
