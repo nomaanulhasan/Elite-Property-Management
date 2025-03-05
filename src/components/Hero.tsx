@@ -38,10 +38,10 @@ const Hero = () => {
       </div>
       <div className="relative container mx-auto px-8 h-full flex items-center">
         <div className="max-w-3xl text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-16">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-8 sm:mb-12 md:mb-16">
             {slides[currentSlide].title}
           </h1>
-          <p className="text-xl md:text-2xl mb-8">
+          <p className="sm:text-xl md:text-2xl mb-8">
             {slides[currentSlide].subtitle}
           </p>
         </div>
